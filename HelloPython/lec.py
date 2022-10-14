@@ -81,10 +81,10 @@
 #     print(i)
 
 
-import numbers
+# import numbers
 
 
-text = 'съешь немного чего хочется'
+# text = 'съешь немного чего хочется'
 # print(len(text))
 # print('немного' in text)
 # print(text.isdigit())
@@ -134,34 +134,209 @@ text = 'съешь немного чего хочется'
 
 
 
-def f(x):
-    if x == 1:
-        return 'Целое'
-    elif x == 2.3:
-        return 23
-    else:
-        return
+# def f(x):
+#     if x == 1:
+#         return 'Целое'
+#     elif x == 2.3:
+#         return 23
+#     else:
+#         return
 
-arg = 1
-print(f(arg))
+# arg = 1
+# print(f(arg))
+
+# --------------------------------- Работа с файлами --------------------------------
+
+# colors = ['red', 'green', 'blue356']
+# data = open('file.txt', 'a')
+# data.writelines(colors)
+# data.write('\nline\n')
+# data.write('\nline2\n')
+# data.close()
+
+# with open('file.txt', 'a') as data:
+#     data.write('line56\n')
+#     data.write('line5633\n')
+
+# path = "file.txt"
+# data = open(path, 'r')
+# for i in data:
+#     print(i)
+# data.close()
 
 
+# --------------------------------- Функции и модули --------------------------------
+
+# import hello as h
+# print(h.f(1))
+
+# def new_string(symbol, count=8):
+#     return symbol * count
+# print(new_string('!', 5))
+# print(new_string('!'))
+# print(new_string('z'))
+
+# from operator import itemgetter
 
 
+# def concatenatio(*params):
+#     res: str = ""
+#     for i in params:
+#         res += i
+#     return res
+
+# print(concatenatio('a', 'b', 'z'))
+# print(concatenatio('a', '1', '3'))
 
 
+# --------------------------------- Рекурсия --------------------------------
+
+# def fib(n):
+#     if n in [1, 2]:
+#         return 1
+#     else:
+#         return fib(n-1) + fib(n-2)
+    
+# list = []
+# for e in range(1,10):
+#     list.append(fib(e))
+# print(list)
+
+# --------------------------------- Кортежи  --------------------------------
+# - это неизменяемый список
+
+# a = (3, 5, 8, 9)
+# print(a)
+# print(a[0], a[2], a[-1])
+
+# for i in a:
+#     print(i)
+
+# t = ()
+# print(type(t))
+# t = (1,)
+# print(type(t))
+# t = (1)
+# print(type(t))
+# t = (1, 5, 9876, 43536)
+# print(type(t))
+
+# colors = ['red', 'green']
+# print(colors)
+# t = tuple(colors)
+# print(t)
+# t = colors
+# print(t)
+
+# t = ('red', 'green')
+# print(t)
+# a = list(t)
+# print(a)
+
+# t = tuple(['red', 'green', 'blue'])
+# print(t[0])
+# print(t[-1])
+
+# t = tuple(['red', 'green'])
+# red, green = t
+# print('r:{} g: {}'.format(red, green))
 
 
+# --------------------------------- Словари  --------------------------------
+# - это неупорядоченные коллекции произвольных объектов с доступом по ключу.
 
 
+# from select import kevent
+# from turtle import down
 
 
+# dictionary = {}
+# dictionary = \
+#     {
+#         'up': 'вверх',
+#         'down': 'вниз'
+#     }
+# print(dictionary)
+# print(dictionary['down'])
+
+# for k in dictionary.keys():
+#     print(k)
+
+# for k in dictionary.values():
+#     print(k)
+
+# for v in dictionary:
+#     print([v])
+
+# del dictionary ['up']
+# print(dictionary)
 
 
+# --------------------------------- Множества  --------------------------------
+# - содержит в себе уникальные элемунты
+
+# colors = {'red', 'green', 'blue'}
+# print(colors)
+# colors.add('black')
+# print(colors)
+# colors.remove('black')
+# print(colors)
+# colors.remove('black')
+# print(colors)
+# colors.clear()
+# print(colors)
+
+# a = {1,2,3,5,8}
+# b = {2,3,8,13,21}
+# c = a.copy()
+# print(c)
+# u = a.union(b)
+# print(u)
+# i = a.intersection(b)
+# print(i)
+# dl = a.difference(b)
+# print(dl)
+
+# q = a \
+#     .union(b)\
+#     .difference(a.intersection(b))
+# print(q)
+
+# s = frozenset(a)
+
+# --------------------------------- Более глубокая теория по спискам  --------------------------------
+
+# list1 = [1,2,3,4,5]
+# list1.insert(3, 11)
+# print(list1)
+
+# list1 = [1,2,3,4,5]
+# list1.pop()
+# print(list1)
 
 
+# list1 = [1,2,3,4,5]
+# list1.append(25)
+# print(list1)
 
+# list1 = [1,2,3,4,5]
+# list2 = list1
 
+# for e in list1:
+#     print(e)
 
+# print()
 
+# for e in list2:
+#     print(e)
 
+# list1[0] = 123
+# list2[2] = 568
+
+# for e in list1:
+#     print(e)
+
+# print()
+
+# for e in list2:
+#     print(e)
